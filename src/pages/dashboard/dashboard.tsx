@@ -100,7 +100,7 @@ export default function Base(): JSX.Element {
   };
 
   const logout = () => {
-    history.push('/login');
+    history.push('/');
   };
 
   return (
@@ -147,7 +147,7 @@ export default function Base(): JSX.Element {
         </div>
         <Divider />
         <List>
-          <ListItem button component={Link} to="/admin/product" key="products">
+          <ListItem button component={Link} to="/products/products" key="products">
             <ListItemIcon>
               <ComputerIcon />
             </ListItemIcon>

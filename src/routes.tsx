@@ -15,10 +15,10 @@ export default function Routes(){
     
     <Switch>
       <Route path="/" exact component={Login}/>
-      <Route path="/base/Base" exact component={Base}/>
+      <Route path="/dashboard/dashboard" exact component={Base}/>
       <Route path="/login/singin" exact component={SingIn}/>
       <Route path="/products/products" exact component={Products}/>
-      <Route path="/EditProduct/EditProduct'" exact component={EditProduct}/>
+      <Route path="/EditProduct/EditProduct" exact component={EditProduct}/>
       <Route path="/products/ProductCard" exact component={ProductCard}/>
       </Switch>
     </BrowserRouter>

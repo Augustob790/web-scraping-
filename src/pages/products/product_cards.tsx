@@ -37,7 +37,7 @@ function ProductCard({
       const resultDeleteNotebook = await axiosDeleteNotebook.remove(idNotebook);
       if (resultDeleteNotebook.body.data.status) {
         alert(resultDeleteNotebook.body.data.message);
-        history.push('/admin');
+        history.push('/dashboard/dashboard');
       }
     }
   }
@@ -77,7 +77,7 @@ function ProductCard({
         <Button
           size="small"
           component={Link}
-          to={`/admin/product/edit/${id}`}
+          to={`/EditProduct/EditProduct/${id}`}
           color="primary"
         >
           Edit

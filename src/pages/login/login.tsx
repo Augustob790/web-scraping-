@@ -31,7 +31,7 @@ function Login(): JSX.Element {
     if (response.body === undefined) {
       alert('Tente mais tarde!');
     } else if (response.body.data.status) {
-      history.push('/admin');
+      history.push('/dashboard/dashboard');
     } else {
       alert(response.body.data.message);
     }
