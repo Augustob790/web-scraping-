@@ -23,7 +23,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ExitIcon from '@material-ui/icons/PowerSettingsNew';
 import { Link, useHistory } from 'react-router-dom';
 import ComputerIcon from '@material-ui/icons/Computer';
-import { AdminRoutes } from '../../routes';
+import Routes from '../../routes';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme: Theme) =>
@@ -168,7 +168,7 @@ export default function Base(): JSX.Element {
       >
         <div className={classes.drawerHeader} />
         <div>
-          <AdminRoutes />
+          <Routes />
         </div>
       </main>
     </div>

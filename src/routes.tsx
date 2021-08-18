@@ -1,15 +1,12 @@
 
 import React from 'react';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
-import Base from './modules/base/Base';
-
-
-
-import Login from './modules/login/logins';
-import SingIn from './modules/login/singin';
-import Products from './modules/products/Products';
-import EditProduct from './modules/EditProduct/EditProduct';
-import ProductCard from './modules/products/ProductCard';
+import Base from './pages/dashboard/dashboard';
+import Login from './pages/login/login';
+import SingIn from './pages/login/cadastro';
+import Products from './pages/products/products';
+import EditProduct from './pages/products_edit/products_edit';
+import ProductCard from './pages/products/product_cards';
 
 export default function Routes(){
   return(
@@ -18,6 +15,7 @@ export default function Routes(){
     
     <Switch>
       <Route path="/" exact component={Login}/>
+      <Route path="/base/Base" exact component={Base}/>
       <Route path="/login/singin" exact component={SingIn}/>
       <Route path="/products/products" exact component={Products}/>
       <Route path="/EditProduct/EditProduct'" exact component={EditProduct}/>
